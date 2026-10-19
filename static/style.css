@@ -1,0 +1,179 @@
+body{
+    background-color: black;
+    margin: 0;
+}
+h1{
+    font-size: 35px;
+}
+.grand_box{
+    
+    border: 1px solid black;
+    border-radius: 30px;
+    background-color: green;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+    
+.medium_box{
+    font-size: 10px;
+    font-family:'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: flex-start;
+   
+    
+}
+
+
+img{
+    width: 50%;
+    border: 5px solid black;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow:10px;
+    
+    
+}
+.box2{
+    font-size: 10px;
+    display: inline;
+}
+.box3{
+    font-size: 10px;
+    color: green;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    display: inline;
+}
+
+
+/*=====> PARTIE CLAVIER*/
+
+/*=======>PARTIE TOUCHE DE FONCTION*/
+
+.container_fonction{
+    display: grid;
+    grid-template-columns: repeat(6,50px); 
+    grid-template-rows: 25px;
+    padding: 10px;
+    justify-content: center;
+}
+button {
+    border-radius: 15px; 
+    background-color: white;
+    text-align: center;
+    border: 3px solid greenyellow;
+}
+button:hover{
+    background-color: green;
+    color: white;
+}
+
+/*=======>PARTIE TOUCHE DE NUM*/
+.container_number{
+    display: grid;
+    grid-template-columns: repeat(4,70px);
+    grid-template-rows: repeat(6,40px);
+    gap: 5px;
+    justify-content: center;
+}
+
+/*=============> Barre resultats*/
+.con_bar{
+      border: 1.5px solid black;
+    border-radius: 10px;
+    background-color: rgba(1, 75, 1, 0.82);
+    margin-top: 5px;
+    /*display: flex;
+    justify-content: center;*/
+}
+
+.barre{
+  
+    padding: 20px;
+    color: black;
+    font-size: 140%;
+    
+    
+}
+
+
+
+
+footer{
+    background-color: green;
+    color: white;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* =====> VERSION PC (écrans de 900px ou plus) */
+/* Ajouté à la fin : il ne s'active que sur grand écran et laisse le mobile intact */
+@media (min-width: 900px) {
+
+    /* On centre toute la page dans une colonne de largeur raisonnable */
+    body {
+        max-width: 520px;
+        margin: 0 auto;
+        padding: 30px 20px;
+    }
+
+    /* Le petit "M" qui indique qu'il y a une valeur en mémoire */
+    #indicateur_memoire {
+        min-height: 20px;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 14px;
+        color: green;
+        padding: 10px 10px 0 10px;
+    }
+
+    /* L'écran de la calculatrice */
+    #affiche {
+        min-height: 50px;
+        margin: 5px 10px;
+        padding: 15px;
+        border: 1px solid black;
+        border-radius: 15px;
+        background-color: black;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 28px;
+        text-align: right;
+        word-break: break-all;
+        color: green
+    }
+
+    /* Touches de fonction : elles occupent toute la largeur */
+    .container_fonction {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 40px;
+        gap: 5px;
+    }
+
+    /* Touches numériques : plus grandes, alignées avec le reste */
+    .container_number {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 75px);
+        padding: 10px;
+    }
+
+    button {
+        cursor: pointer;
+        font-size: 18px;
+    }
+}

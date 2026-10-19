@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/static/style.css" rel="stylesheet">
+    <title>Weby calculator</title>
+</head>
+<body>
+    <div class="grand_box">
+        <div class="medium_box">
+            <div class="box1"><img src="/static/logo.jpg" alt="logo"></div>
+            <div class="box2"><h1>Weby calculator</h1></div>
+            
+        </div>
+
+        </div>
+        <!--BARRE DE RESULTATS-->
+        <div class="con_bar">
+            <div class="barre">
+                <div id="indicateur_memoire">{% if memoire %}M{% endif %}</div>
+                <div id="affiche">{{ expression or "0" }}</div>
+            </div>
+        </div>
+
+
+<form method="post">
+    <input type="hidden" name="expression" value="{{ expression }}">
+    <input type="hidden" name="memoire" value="{{ memoire }}">
+
+    <!--Touches de fonction-->
+    <div class="container_fonction">
+        <button name="touche" value="MC">MC</button>
+        <button name="touche" value="MR">MR</button>
+        <button name="touche" value="M+">M+</button>
+        <button name="touche" value="M-">M-</button>
+        <button name="touche" value="(">(</button>
+        <button name="touche" value=")">)</button>
+    </div>
+
+    <!--Touches numériques-->
+    <div class="container_number">
+        <button name="touche" value="AC">AC</button>
+        <button name="touche" value="Delete">Delete</button>
+        <button name="touche" value="%">%</button>
+        <button name="touche" value="/">/</button>
+        <button name="touche" value="7">7</button>
+        <button name="touche" value="8">8</button>
+        <button name="touche" value="9">9</button>
+        <button name="touche" value="*">X</button>
+        <button name="touche" value="4">4</button>
+        <button name="touche" value="5">5</button>
+        <button name="touche" value="6">6</button>
+        <button name="touche" value="-">-</button>
+        <button name="touche" value="1">1</button>
+        <button name="touche" value="2">2</button>
+        <button name="touche" value="3">3</button>
+        <button name="touche" value="+">+</button>
+        <button name="touche" value="^">^</button>        <button name="touche" value="0">0</button>
+        <button name="touche" value=".">.</button>
+        <button name="touche" value="=">=</button>
+    </div>
+</form>
+
+<footer>
+    <p>
+        &copy;2026 Brandon Samuel
+    Tous droits révervés
+    </p>
+</footer>
+</body>
+</html>
