@@ -75,8 +75,8 @@ button:hover{
 /*=======>PARTIE TOUCHE DE NUM*/
 .container_number{
     display: grid;
-    grid-template-columns: repeat(4,70px);
-    grid-template-rows: repeat(6,40px);
+    grid-template-columns: repeat(4,80px);
+    grid-template-rows: repeat(6,60px);
     gap: 5px;
     justify-content: center;
 }
