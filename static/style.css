@@ -77,7 +77,7 @@ button:hover{
 .container_number{
     display: grid;
     grid-template-columns: repeat(4,85px);
-    grid-template-rows: repeat(5,70px);
+    grid-template-rows: repeat(6,70px);
     gap: 5px;
     justify-content: center;
 }
