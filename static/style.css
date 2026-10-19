@@ -58,6 +58,7 @@ img{
     display: grid;
     grid-template-columns: repeat(6,50px); 
     grid-template-rows: 25px;
+    gap: 5px;
     padding: 10px;
     justify-content: center;
 }
@@ -75,8 +76,8 @@ button:hover{
 /*=======>PARTIE TOUCHE DE NUM*/
 .container_number{
     display: grid;
-    grid-template-columns: repeat(4,80px);
-    grid-template-rows: repeat(6,60px);
+    grid-template-columns: repeat(4,30%);
+    grid-template-rows: repeat(6,70px);
     gap: 5px;
     justify-content: center;
 }
